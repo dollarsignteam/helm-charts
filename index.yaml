@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  backend:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-05-04T10:56:27.724529918Z"
+    description: A Helm chart for Kubernetes
+    digest: ed34655ed6a1625b48a59a4be6bc51470a7bd2fe39b60136633f42167e6e5d9d
+    name: backend
+    type: application
+    urls:
+    - https://github.com/dollarsignteam/helm-charts/releases/download/backend-1.0.3/backend-1.0.3.tgz
+    version: 1.0.3
+generated: "2021-05-04T10:56:27.591829451Z"
