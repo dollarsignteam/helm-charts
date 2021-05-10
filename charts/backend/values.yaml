@@ -63,7 +63,7 @@ ports:
     protocol: TCP
 
 livenessProbe:
-  enabled: true
+  enabled: false
   periodSeconds: 20
   timeoutSeconds: 5
   initialDelaySeconds: 30
@@ -72,7 +72,7 @@ livenessProbe:
     port: backend
 
 readinessProbe:
-  enabled: true
+  enabled: false
   timeoutSeconds: 5
   initialDelaySeconds: 10
   httpGet:
