@@ -55,6 +55,8 @@ ingress:
        - chart-example.local
       secretName: chart-example-tls
 
+env: {}
+
 ports:
   - name: backend
     containerPort: 80
