@@ -4,8 +4,8 @@ fullnameOverride: ""
 nsqd:
   name: "nsqd"
 
-  podDisruptionBudget:
-    minAvailable: 1
+  podDisruptionBudget: {}
+    # minAvailable: 1
 
   service:
     type: ClusterIP
@@ -42,16 +42,16 @@ nsqd:
       requests:
         storage: 1Gi
 
-  resources:
-    limits:
-      cpu: 100m
-      memory: 128Mi
+  resources: {}
+    # limits:
+    #   cpu: 100m
+    #   memory: 128Mi
 
 nsqlookupd:
   name: "nsqlookupd"
 
-  podDisruptionBudget:
-    minAvailable: 2
+  podDisruptionBudget: {}
+    # minAvailable: 2
 
   service:
     annotations: {}
@@ -81,7 +81,7 @@ nsqadmin:
   name: "admin"
 
   autoscaling:
-    enabled: true
+    enabled: false
     annotations: {}
     minReplicas: 1
     maxReplicas: 1
@@ -94,8 +94,8 @@ nsqadmin:
     # path: "/"
     # tls: []
 
-  podDisruptionBudget:
-    minAvailable: 1
+  podDisruptionBudget: {}
+    # minAvailable: 1
 
   service:
     annotations: {}
