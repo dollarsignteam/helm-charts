@@ -58,6 +58,7 @@ ingress:
       secretName: chart-example-tls
 
 env: {}
+command: {}
 
 ports:
   - name: backend
