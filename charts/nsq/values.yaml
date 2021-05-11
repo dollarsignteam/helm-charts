@@ -72,7 +72,7 @@ nsqlookupd:
   resources:
     limits:
       cpu: 50m
-      memory: 32Mi
+      memory: 64Mi
 
 nsqadmin:
   enabled: true
