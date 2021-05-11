@@ -10,9 +10,14 @@ metadata:
     app.kubernetes.io/component: {{ .Values.nsqadmin.name }}
     app.kubernetes.io/instance: {{ .Release.Name }}
     app.kubernetes.io/managed-by: {{ .Release.Service }}
-  {{- with .Values.nsqadmin.ingress.annotations }}
+  {{- if .Values.nsqadmin.ingress.annotations }}
   annotations:
-{{ toYaml . | trim | indent 4 }}
+    {{- toYaml .Values.nsqadmin.ingress.annotations | nindent 4 }}
+    {{- if .Values.nsqadmin.auth.enabled }}
+    nginx.ingress.kubernetes.io/auth-type: basic
+    nginx.ingress.kubernetes.io/auth-secret: {{ $fullname }}-basic-auth
+    nginx.ingress.kubernetes.io/auth-realm: "Authentication Required"
+    {{- end }}
   {{- end }}
 spec:
   {{- if .Values.nsqadmin.ingress.tls }}

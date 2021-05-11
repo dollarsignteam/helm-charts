@@ -36,7 +36,7 @@ nsqd:
       tag: latest
 
   persistence:
-    storageClass: "standard"
+    storageClass: ""
     resources:
       requests:
         storage: 1Gi
@@ -77,6 +77,11 @@ nsqlookupd:
 nsqadmin:
   enabled: true
   name: "admin"
+  auth:
+    enabled: false
+    username: "admin"
+    password: "admin"
+
 
   autoscaling:
     enabled: false
@@ -88,9 +93,18 @@ nsqadmin:
 
   ingress:
     enabled: false
-    # annotations: {}
-    # path: "/"
-    # tls: []
+    annotations:
+      kubernetes.io/ingress.class: nginx
+      # kubernetes.io/tls-acme: "true"
+      # nginx.ingress.kubernetes.io/backend-protocol: HTTPS
+      # cert-manager.io/cluster-issuer: cloudflare-cluster-issuer
+    hosts:
+      host: nsq-admin.local
+    path: "/"
+    tls:
+      - hosts:
+        - nsq-admin.local
+        secretName: nsq-admin-tls
 
   podDisruptionBudget: {}
     # minAvailable: 1
