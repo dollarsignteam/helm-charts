@@ -42,8 +42,12 @@ spec:
           command:
             {{- toYaml .Values.command | nindent 12 }}
           {{- end }}
+          {{- if .Values.service.enabled }}
           ports:
-            {{- toYaml .Values.ports | nindent 12 }}
+            - name: {{ .Values.service.portName }}
+              containerPort: {{ .Values.service.targetPort }}
+              protocol: {{ .Values.service.protocol }}
+          {{- end }}
           {{- if .Values.livenessProbe.enabled }}
           livenessProbe:
             {{- omit .Values.livenessProbe "enabled" | toYaml | nindent 12 }}
