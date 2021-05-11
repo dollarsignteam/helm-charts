@@ -241,4 +241,15 @@ entries:
     urls:
     - https://github.com/dollarsignteam/helm-charts/releases/download/backend-1.0.0/backend-1.0.0.tgz
     version: 1.0.0
+  nsq:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2021-05-11T17:56:15.786656113Z"
+    description: A Helm chart for NSQ
+    digest: 76728c7e72170c39018869c95acb8837c06d6fdbed5d98b298c98449f9702711
+    name: nsq
+    type: application
+    urls:
+    - https://github.com/dollarsignteam/helm-charts/releases/download/nsq-0.1.0/nsq-0.1.0.tgz
+    version: 0.1.0
 generated: "2021-05-04T11:09:38.161972769Z"
