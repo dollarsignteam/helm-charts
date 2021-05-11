@@ -40,10 +40,10 @@ service:
   enabled: false
   type: ClusterIP
   ports:
-    - port: 80
-      targetPort: backend
+    - name: backend
+      port: 80
       protocol: TCP
-      name: backend
+      targetPort: backend
 
 ingress:
   enabled: false
@@ -64,7 +64,7 @@ ingress:
 env: {}
 command: {}
 
-ports: {}
+ports: []
   # - name: backend
   #   containerPort: 80
   #   protocol: TCP
