@@ -1,4 +1,3 @@
-{{ $global := .Values.global }}
 {{ if .Values.nsqadmin.enabled -}}
 apiVersion: apps/v1
 kind: Deployment

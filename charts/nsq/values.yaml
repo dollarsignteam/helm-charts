@@ -3,7 +3,6 @@ fullnameOverride: ""
 
 nsqd:
   name: "nsqd"
-
   podDisruptionBudget: {}
     # minAvailable: 1
 
@@ -14,8 +13,8 @@ nsqd:
   replicaCount: 2
   podManagementPolicy: "Parallel"
   podAnnotations: {}
-  # updateStrategy: {}
-  # priorityClassName: ""
+  updateStrategy: {}
+  priorityClassName: ""
   antiAffinity: "soft"
   nodeSelector: {}
 
@@ -49,14 +48,13 @@ nsqd:
 
 nsqlookupd:
   name: "nsqlookupd"
+  replicaCount: 2
 
   podDisruptionBudget: {}
     # minAvailable: 2
 
   service:
     annotations: {}
-
-  replicaCount: 2
   podManagementPolicy: "Parallel"
   podAnnotations: {}
   # updateStrategy: {}
