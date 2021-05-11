@@ -80,6 +80,9 @@ readinessProbe:
     path: /
     port: backend
 
+customLivenessProbe: {}
+customReadinessProbe: {}
+
 resources: {}
   # requests:
   #   cpu: 50m
