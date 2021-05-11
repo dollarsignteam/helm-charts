@@ -61,6 +61,12 @@ ingress:
       secretName: chart-example-tls
 
 env: {}
+## extraEnvVars:
+##   - name: FOO
+##     value: "bar"
+##
+extraEnvVars: []
+
 command: {}
 
 livenessProbe:
