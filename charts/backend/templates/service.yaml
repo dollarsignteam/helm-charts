@@ -8,10 +8,7 @@ metadata:
 spec:
   type: {{ .Values.service.type }}
   ports:
-    - port: {{ .Values.service.port }}
-      targetPort: backend
-      protocol: TCP
-      name: backend
+    {{- toYaml .Values.service.ports | nindent 4 }}
   selector:
     {{- include "backend.selectorLabels" . | nindent 4 }}
  {{- end }}

@@ -39,7 +39,11 @@ securityContext: {}
 service:
   enabled: false
   type: ClusterIP
-  port: 80
+  ports:
+    - port: 80
+      targetPort: backend
+      protocol: TCP
+      name: backend
 
 ingress:
   enabled: false
@@ -60,10 +64,10 @@ ingress:
 env: {}
 command: {}
 
-ports:
-  - name: backend
-    containerPort: 80
-    protocol: TCP
+ports: {}
+  # - name: backend
+  #   containerPort: 80
+  #   protocol: TCP
 
 livenessProbe:
   enabled: false
