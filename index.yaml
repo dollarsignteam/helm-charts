@@ -3,6 +3,16 @@ entries:
   backend:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2021-05-11T11:35:20.693871461Z"
+    description: A Helm chart for Backend
+    digest: 7ae8261285c9dc588af7637e21594f17da8cb49bc575110eb609ec44e4bbe9bf
+    name: backend
+    type: application
+    urls:
+    - https://github.com/dollarsignteam/helm-charts/releases/download/backend-1.2.2/backend-1.2.2.tgz
+    version: 1.2.2
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2021-05-11T11:31:14.853141956Z"
     description: A Helm chart for Backend
     digest: 112b3ca1362f88ee40adb34c0f08adc0d082388dcf04c1beed72c5f27d3f3439
