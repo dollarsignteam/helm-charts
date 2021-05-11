@@ -60,7 +60,7 @@ ingress:
        - chart-example.local
       secretName: chart-example-tls
 
-env: {}
+env: []
 ## extraEnvVars:
 ##   - name: FOO
 ##     value: "bar"
