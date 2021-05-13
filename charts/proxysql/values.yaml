@@ -3,11 +3,11 @@ fullnameOverride: ""
 
 # Docker image to use for deployment
 image:
-  repository: "severalnines/proxysql"
-  tag: "2.0.18"
+  repository: "proxysql/proxysql"
+  tag: "2.1.1"
 
 # Default number of ProxySQL replicas
-replicaCount: 2
+replicaCount: 1
 
 terminationGracePeriodSeconds: 30
 
