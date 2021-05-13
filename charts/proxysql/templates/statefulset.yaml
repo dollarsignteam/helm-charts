@@ -59,6 +59,8 @@ spec:
           resources:
             {{ toYaml .Values.resources | indent 12 }}
           {{ end }}
+      nodeSelector:
+        {{ toYaml .Values.nodeSelector | trim | indent 8 -}}
       {{- if .Values.antiAffinity }}
       affinity:
         {{- if eq .Values.antiAffinity "hard" }}

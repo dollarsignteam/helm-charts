@@ -94,6 +94,8 @@ lifecycle:
     exec:
       command: ["/bin/sh", "-c", "sleep 5"]
 
+nodeSelector: {}
+
 # Hard means that by default pods will only be scheduled if there are enough nodes for them
 # and that they will never end up on the same node. Setting this to soft will do this "best effort"
 antiAffinity: "soft"
