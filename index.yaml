@@ -353,6 +353,17 @@ entries:
     urls:
     - https://github.com/dollarsignteam/helm-charts/releases/download/nsq-0.1.0/nsq-0.1.0.tgz
     version: 0.1.0
+  open-ocr:
+  - apiVersion: v2
+    appVersion: 1.1.0
+    created: "2021-05-15T08:12:11.062340849Z"
+    description: A Helm chart for OpenOCR
+    digest: 9e9c5c7f591eb02841cc9ac4ba9e032556d127a2efb89a6cfbec1b247ccf0b37
+    name: open-ocr
+    type: application
+    urls:
+    - https://github.com/dollarsignteam/helm-charts/releases/download/open-ocr-1.0.0/open-ocr-1.0.0.tgz
+    version: 1.0.0
   proxysql:
   - apiVersion: v2
     appVersion: 2.1.1
