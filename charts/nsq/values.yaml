@@ -81,7 +81,7 @@ nsqadmin:
     enabled: false
     username: "admin"
     password: "admin"
-
+    htpasswd:
 
   autoscaling:
     enabled: false
