@@ -295,6 +295,16 @@ entries:
   nsq:
   - apiVersion: v2
     appVersion: 1.2.0
+    created: "2021-05-25T07:02:11.660163448Z"
+    description: A Helm chart for NSQ
+    digest: c262be1422038751d9747710c0d92e6bf4edccf63897bc26526907765b44807e
+    name: nsq
+    type: application
+    urls:
+    - https://github.com/dollarsignteam/helm-charts/releases/download/nsq-1.0.2/nsq-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    appVersion: 1.2.0
     created: "2021-05-11T20:34:08.491742319Z"
     description: A Helm chart for NSQ
     digest: 35e7de1da5d7b60175bdc8444cf6dd69ae7b1f517d7d3a1a19326d6218be4451
