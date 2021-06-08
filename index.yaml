@@ -377,6 +377,16 @@ entries:
   proxysql:
   - apiVersion: v2
     appVersion: 2.1.1
+    created: "2021-06-08T10:01:15.901136402Z"
+    description: A Helm chart for ProxySQL
+    digest: 54b6c85a26111b8f9b97829c951703b2908f2513231b3379d07b57381bf27a5f
+    name: proxysql
+    type: application
+    urls:
+    - https://github.com/dollarsignteam/helm-charts/releases/download/proxysql-1.0.3/proxysql-1.0.3.tgz
+    version: 1.0.3
+  - apiVersion: v2
+    appVersion: 2.1.1
     created: "2021-05-13T15:15:18.896514471Z"
     description: A Helm chart for ProxySQL
     digest: 38cddd7fa49a753f88588518b23f9232fc1bcef71632f1f075357fd7d9ad46c4
