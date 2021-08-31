@@ -5,7 +5,12 @@ metadata:
   labels:
     {{- include "backend.labels" . | nindent 4 }}
 spec:
-  revisionHistoryLimit: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: {{ .Values.rollingUpdate.maxSurge }}
+      maxUnavailable: {{ .Values.rollingUpdate.maxUnavailable }}
+  revisionHistoryLimit: {{ .Values.revisionHistoryLimit }}
   {{- if not .Values.autoscaling.enabled }}
   replicas: {{ .Values.replicaCount }}
   {{- end }}
