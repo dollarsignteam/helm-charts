@@ -107,6 +107,10 @@ antiAffinityTopologyKey: "kubernetes.io/hostname"
 
 # Resource requests and limits
 resources: {}
+  # requests:
+  #   memory: 128Mi
+  # limits:
+  #   memory: 256Mi
 
 # Optional tolerations
 tolerations: {}
