@@ -3,6 +3,16 @@ entries:
   activemq-classic:
   - apiVersion: v2
     appVersion: 5.16.2
+    created: "2022-04-23T03:26:56.640052079Z"
+    description: A Helm chart for ActiveMQ Classic
+    digest: 21a3ccf2db8d0ca34a1ff29de749a3ef631feae3e4b0ec268445682a6591cea9
+    name: activemq-classic
+    type: application
+    urls:
+    - https://github.com/dollarsignteam/helm-charts/releases/download/activemq-classic-1.0.6/activemq-classic-1.0.6.tgz
+    version: 1.0.6
+  - apiVersion: v2
+    appVersion: 5.16.2
     created: "2022-04-22T23:51:34.069132367Z"
     description: A Helm chart for ActiveMQ Classic
     digest: d093d9785660faf292b4d5d6c8dc910e1ebdad3190cf8a4231fb338d2ffe4114
@@ -62,6 +72,16 @@ entries:
     - https://github.com/dollarsignteam/helm-charts/releases/download/activemq-classic-1.0.0/activemq-classic-1.0.0.tgz
     version: 1.0.0
   backend:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2022-04-23T03:26:56.797380623Z"
+    description: A Helm chart for Backend
+    digest: a0178964b7013a3ae60420bf44d5ce5d6dd31469625a9c0418031ecaf0dea0ff
+    name: backend
+    type: application
+    urls:
+    - https://github.com/dollarsignteam/helm-charts/releases/download/backend-1.2.7/backend-1.2.7.tgz
+    version: 1.2.7
   - apiVersion: v2
     appVersion: 1.0.0
     created: "2022-04-22T23:51:34.205403359Z"
@@ -414,6 +434,16 @@ entries:
     - https://github.com/dollarsignteam/helm-charts/releases/download/nsq-0.1.0/nsq-0.1.0.tgz
     version: 0.1.0
   open-ocr:
+  - apiVersion: v2
+    appVersion: 1.1.0
+    created: "2022-04-23T03:26:56.950753223Z"
+    description: A Helm chart for OpenOCR
+    digest: 969421b4f8be997042ae766d9b894f8a244c6a8962cab3dfaac382c8572aff28
+    name: open-ocr
+    type: application
+    urls:
+    - https://github.com/dollarsignteam/helm-charts/releases/download/open-ocr-1.0.2/open-ocr-1.0.2.tgz
+    version: 1.0.2
   - apiVersion: v2
     appVersion: 1.1.0
     created: "2022-04-22T23:51:34.367439861Z"
