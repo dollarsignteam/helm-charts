@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   activemq-classic:
   - apiVersion: v2
+    appVersion: 5.17.1
+    created: "2022-07-11T15:55:54.661929859Z"
+    description: A Helm chart for ActiveMQ Classic
+    digest: eb1f08d1bebe82f55f3a697d4bee2d4b03b14dcf3eb0efd119dadac14b348dd9
+    name: activemq-classic
+    type: application
+    urls:
+    - https://github.com/dollarsignteam/helm-charts/releases/download/activemq-classic-1.2.0/activemq-classic-1.2.0.tgz
+    version: 1.2.0
+  - apiVersion: v2
     appVersion: 5.16.2
     created: "2022-04-23T06:25:08.030817936Z"
     description: A Helm chart for ActiveMQ Classic
