@@ -15,5 +15,21 @@ spec:
       targetPort: 5672
       protocol: TCP
       name: amqp
+    - port: 1883
+      targetPort: 1883
+      protocol: TCP
+      name: mqtt
+    - port: 61613
+      targetPort: 61613
+      protocol: TCP
+      name: stomp
+    - port: 61614
+      targetPort: 61614
+      protocol: TCP
+      name: ws
+    - port: 61616
+      targetPort: 61616
+      protocol: TCP
+      name: openwire
   selector:
     {{- include "activemq-classic.selectorLabels" . | nindent 4 }}

@@ -62,9 +62,9 @@ env:
 
 resources:
   requests:
-    memory: 256Mi
+    memory: 1Gi
   limits:
-    memory: 512Mi
+    memory: 1Gi
 
 persistence:
   enabled: false

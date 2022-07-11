@@ -48,6 +48,18 @@ spec:
             - name: amqp
               containerPort: 5672
               protocol: TCP
+            - name: mqtt
+              containerPort: 1883
+              protocol: TCP
+            - name: stomp
+              containerPort: 61613
+              protocol: TCP
+            - name: ws
+              containerPort: 61614
+              protocol: TCP
+            - name: openwire
+              containerPort: 61616
+              protocol: TCP
           livenessProbe:
             tcpSocket:
               port: amqp
