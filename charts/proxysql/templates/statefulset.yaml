@@ -38,12 +38,12 @@ spec:
           {{ end }}
           readinessProbe:
             initialDelaySeconds: 10
-            timeoutSeconds: 5
+            timeoutSeconds: 10
             tcpSocket:
               port: {{ .Values.proxysql.admin.port }}
           livenessProbe:
             initialDelaySeconds: 10
-            timeoutSeconds: 5
+            timeoutSeconds: 10
             failureThreshold: 5
             tcpSocket:
               port: {{ .Values.proxysql.admin.port }}
