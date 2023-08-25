@@ -2,6 +2,16 @@ apiVersion: v1
 entries:
   activemq-classic:
   - apiVersion: v2
+    appVersion: 5.18.2
+    created: "2023-08-25T17:06:28.111319234Z"
+    description: A Helm chart for ActiveMQ Classic
+    digest: c5675655fa3f529c310044fe194c53a609200805d4bbdd666a874dd6581eba50
+    name: activemq-classic
+    type: application
+    urls:
+    - https://github.com/dollarsignteam/helm-charts/releases/download/activemq-classic-1.2.2/activemq-classic-1.2.2.tgz
+    version: 1.2.2
+  - apiVersion: v2
     appVersion: 5.18.1
     created: "2023-04-28T06:52:02.680369426Z"
     description: A Helm chart for ActiveMQ Classic
@@ -575,6 +585,16 @@ entries:
     - https://github.com/dollarsignteam/helm-charts/releases/download/open-ocr-1.0.0/open-ocr-1.0.0.tgz
     version: 1.0.0
   proxysql:
+  - apiVersion: v2
+    appVersion: 2.5.5
+    created: "2023-08-25T17:06:28.323133762Z"
+    description: A Helm chart for ProxySQL
+    digest: 3f4c8645604ee39aefb661ae021b2e492436c78edd4c7720da973799514ea794
+    name: proxysql
+    type: application
+    urls:
+    - https://github.com/dollarsignteam/helm-charts/releases/download/proxysql-1.1.0/proxysql-1.1.0.tgz
+    version: 1.1.0
   - apiVersion: v2
     appVersion: 2.4.4
     created: "2022-11-24T21:23:08.297197756Z"
