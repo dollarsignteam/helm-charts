@@ -4,7 +4,7 @@ fullnameOverride: ""
 # Docker image to use for deployment
 image:
   repository: "proxysql/proxysql"
-  tag: "2.4.4"
+  tag: "2.5.5"
 
 # Default number of ProxySQL replicas
 replicaCount: 1
